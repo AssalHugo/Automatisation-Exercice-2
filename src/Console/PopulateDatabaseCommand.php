@@ -53,7 +53,7 @@ class PopulateDatabaseCommand extends Command
                 'phone' => $faker->phoneNumber,
                 'email' => $faker->companyEmail,
                 'website' => $faker->url,
-                'logo' => $faker->imageUrl(640, 480, 'business'),
+                'image' => $faker->imageUrl(640, 480, 'business'),
                 'created_at' => now(),
                 'updated_at' => now(),
                 'head_office_id' => null
@@ -70,7 +70,7 @@ class PopulateDatabaseCommand extends Command
                     'name' => $faker->streetName,
                     'address' => $faker->address,
                     'city' => $faker->city,
-                    'postal_code' => $faker->postcode,
+                    'zip_code' => $faker->postcode,
                     'country' => $faker->country,
                     'email' => $faker->email,
                     'phone' => $faker->phoneNumber,
@@ -93,7 +93,7 @@ class PopulateDatabaseCommand extends Command
                     'office_id' => $office['id'],
                     'email' => $faker->email,
                     'phone' => $faker->phoneNumber,
-                    'position' => $faker->jobTitle,
+                    'job_title' => $faker->jobTitle,
                     'created_at' => now(),
                     'updated_at' => now()
                 ];
